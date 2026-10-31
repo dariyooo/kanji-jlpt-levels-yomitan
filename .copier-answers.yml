@@ -1,10 +1,11 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v0.1.0
+_commit: v0.2.0
 _src_path: gh:dariyooo/dalang-dict-utils
-dalang_dict_utils_tag: v0.1.0
+dalang_dict_utils_tag: v0.2.0
 description: JLPT level (N5-N1) of kanji for Yomitan and DaLang
 github_owner: dariyooo
 module_name: kanji_jlpt_levels
 python_version: '3.12'
-release_cron: ''
 repo_name: kanji-jlpt-levels-yomitan
+source_updates: true
+update_cron: 0 4 * * 1
