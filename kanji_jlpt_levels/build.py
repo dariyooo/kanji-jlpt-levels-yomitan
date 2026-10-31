@@ -1,16 +1,14 @@
 import json
 import sys
 
-from dalang_dict import build_index, fetch, github_source, package_dictionary
+from dalang_dict import GitHubFile, build_index, fetch, package_dictionary
 
 GITHUB_REPO = "dariyooo/kanji-jlpt-levels-yomitan"
 ASSET = "kanji-jlpt-levels-yomitan"
 TITLE = "JLPT Kanji"
 
-# Pinned for reproducible builds; bump the commit to pick up upstream fixes.
-KANJI_DATA = github_source(
-    "kanji-data.json", "davidluzgouveia/kanji-data", "00fd7079c3890f430759536f91aa5e854ec0ca4f", "kanji.json"
-)
+# Locked to a version in sources.lock.json, updated by the Update workflow
+KANJI_DATA = GitHubFile("kanji-data.json", repo="davidluzgouveia/kanji-data", path="kanji.json", branch="master")
 
 # KANJIDIC2 grades of the jōyō kanji: 1-6 kyōiku kanji, 8 remaining jōyō kanji
 JOUYOU_GRADES = (1, 2, 3, 4, 5, 6, 8)

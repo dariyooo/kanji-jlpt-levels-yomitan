@@ -8,7 +8,8 @@ Each kanji is stored as a `kanji_meta_bank` frequency entry with a display value
 ## Sources
 
 There are no official kanji lists for the JLPT since 2010, so all levels are unofficial.
-All data is read from [kanji-data](https://github.com/davidluzgouveia/kanji-data) (pinned to a commit in `kanji_jlpt_levels/build.py`).
+All data is read from [kanji-data](https://github.com/davidluzgouveia/kanji-data), locked to a commit in `sources.lock.json`.
+The *Update* workflow checks it weekly, commits newer versions and releases the dictionary if it changed.
 
 * **N5-N1 levels**: Jonathan Waller's [JLPT resources](http://www.tanos.co.uk/jlpt/) (`jlpt_new` in kanji-data).
   These are the de facto standard and used by e.g. jisho.org, JLPT Sensei, nihongo-pro and kanjiapi.dev.

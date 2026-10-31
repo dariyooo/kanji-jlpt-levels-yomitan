@@ -1,0 +1,11 @@
+{
+  "kanji-data.json": {
+    "name": "kanji-data.json",
+    "repo": "davidluzgouveia/kanji-data",
+    "path": "kanji.json",
+    "branch": "master",
+    "kind": "github-file",
+    "version": "7ada8ddbfe7359286f4db4e766d1242b9e6f7969",
+    "sha256": "561b72ea9df703c58fae0c68585812e172aaa7611d2fcee6719d55fd2dfd4fa4"
+  }
+}
