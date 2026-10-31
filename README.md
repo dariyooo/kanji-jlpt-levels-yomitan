@@ -33,7 +33,7 @@ uv sync
 uv run build.py
 ```
 
-This creates the dictionary in `out/` (`kanji-jlpt-levels-yomitan.zip` + `kanji-jlpt-levels-yomitan.index.json`).
+This creates the dictionary in `out/` (`kanji-jlpt-levels-yomitan.zip`, `kanji-jlpt-levels-yomitan.index.json` and `kanji-jlpt-levels-yomitan.manifest.json`).
 Downloaded sources are cached in `tmp/sources/`, the uncompressed dictionary is kept in `tmp/kanji-jlpt-levels-yomitan/` for inspection.
 
 ## Development
