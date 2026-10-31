@@ -1,0 +1,37 @@
+[project]
+name = "kanji-jlpt-levels-yomitan"
+version = "0.1.0"
+description = "JLPT level (N5-N1) of kanji for Yomitan and DaLang"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dalang-dict-utils",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.400",
+    "pytest>=8.3",
+    "ruff>=0.11",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+dalang-dict-utils = { git = "https://github.com/dariyooo/dalang-dict-utils", tag = "v0.1.0" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+include = ["build.py", "kanji_jlpt_levels", "tests"]
+pythonVersion = "3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
