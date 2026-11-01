@@ -1,6 +1,6 @@
 # kanji-jlpt-levels-yomitan
 
-JLPT level (N5-N1) of kanji for Yomitan and DaLang.
+JLPT level (N5-N1) of kanji for Yomitan and DaKanji.
 
 The dictionary only contains the JLPT level and is meant to be installed alongside a kanji dictionary like KANJIDIC.
 Each kanji is stored as a `kanji_meta_bank` frequency entry with a display value, e.g. `["日","freq",{"value":5,"displayValue":"N5"}]`.
