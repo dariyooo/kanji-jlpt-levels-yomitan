@@ -19,11 +19,13 @@ dev = [
 package = false
 
 [tool.uv.sources]
-dalang-dict-utils = { git = "https://github.com/dariyooo/dalang-dict-utils", tag = "v0.2.6" }
+dalang-dict-utils = { git = "https://github.com/dariyooo/dalang-dict-utils", tag = "v0.3.3" }
 
 [tool.ruff]
 line-length = 120
 target-version = "py312"
+# Vendored third-party code stays as it was copied
+extend-exclude = ["vendored_sources"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
