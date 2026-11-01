@@ -8,7 +8,13 @@ ASSET = "kanji-jlpt-levels-yomitan"
 TITLE = "JLPT Kanji"
 
 # Locked to a version in sources.lock.json, updated by the Update workflow
-KANJI_DATA = GitHubFile("kanji-data.json", repo="davidluzgouveia/kanji-data", path="kanji.json", branch="master")
+KANJI_DATA = GitHubFile(
+    "kanji-data.json",
+    repo="davidluzgouveia/kanji-data",
+    path="kanji.json",
+    branch="master",
+    used_for="N5-N1 levels from `jlpt_new` (Waller), jōyō kanji without a level from `grade` (KANJIDIC2) as N1",
+)
 
 # KANJIDIC2 grades of the jōyō kanji: 1-6 kyōiku kanji, 8 remaining jōyō kanji
 JOUYOU_GRADES = (1, 2, 3, 4, 5, 6, 8)
